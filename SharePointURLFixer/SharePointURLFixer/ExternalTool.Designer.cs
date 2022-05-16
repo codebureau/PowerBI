@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExternalTool));
             this.label1 = new System.Windows.Forms.Label();
             this.sharePointURL = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.autoClipboardGetText = new System.Windows.Forms.CheckBox();
             this.copyButton = new System.Windows.Forms.Button();
             this.loadFromClipboard = new System.Windows.Forms.Button();
+            this.appIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.appIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -108,12 +111,23 @@
             this.loadFromClipboard.UseVisualStyleBackColor = true;
             this.loadFromClipboard.Click += new System.EventHandler(this.loadFromClipboard_Click);
             // 
+            // appIcon
+            // 
+            this.appIcon.Image = ((System.Drawing.Image)(resources.GetObject("appIcon.Image")));
+            this.appIcon.Location = new System.Drawing.Point(33, 424);
+            this.appIcon.Name = "appIcon";
+            this.appIcon.Size = new System.Drawing.Size(120, 120);
+            this.appIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.appIcon.TabIndex = 7;
+            this.appIcon.TabStop = false;
+            // 
             // ExternalTool
             // 
             this.AcceptButton = this.copyButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1284, 566);
+            this.Controls.Add(this.appIcon);
             this.Controls.Add(this.loadFromClipboard);
             this.Controls.Add(this.copyButton);
             this.Controls.Add(this.autoClipboardGetText);
@@ -124,9 +138,11 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "ExternalTool";
+            this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "SharePoint URL Fixer";
             this.Load += new System.EventHandler(this.ExternalTool_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.appIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -141,6 +157,7 @@
         private System.Windows.Forms.CheckBox autoClipboardGetText;
         private System.Windows.Forms.Button copyButton;
         private System.Windows.Forms.Button loadFromClipboard;
+        private System.Windows.Forms.PictureBox appIcon;
     }
 }
 
