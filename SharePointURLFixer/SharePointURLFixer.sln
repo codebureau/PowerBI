@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PowerBI", "PowerBI", "{68EB
 		sharepointurlfixer.pbitool.json = sharepointurlfixer.pbitool.json
 	EndProjectSection
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SharePointURLFixerSetup", "SharePointURLFixerSetup\SharePointURLFixerSetup.vdproj", "{BACB78DB-527E-4E54-85C4-9E5BC25BE12F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,9 +22,15 @@ Global
 		{481317A0-F9C3-4823-A5E3-B8DD6705C281}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{481317A0-F9C3-4823-A5E3-B8DD6705C281}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{481317A0-F9C3-4823-A5E3-B8DD6705C281}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACB78DB-527E-4E54-85C4-9E5BC25BE12F}.Debug|Any CPU.ActiveCfg = Debug
+		{BACB78DB-527E-4E54-85C4-9E5BC25BE12F}.Release|Any CPU.ActiveCfg = Release
+		{BACB78DB-527E-4E54-85C4-9E5BC25BE12F}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BACB78DB-527E-4E54-85C4-9E5BC25BE12F} = {68EB67C5-9A36-4780-B3F8-5BD2A1439DA2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {53FE34B2-0C47-4B4C-81B8-F93AAC83CDC7}
