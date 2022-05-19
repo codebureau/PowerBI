@@ -6,7 +6,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 
-namespace SharePointURLFixer
+namespace SharePointURLCleaner
 {
     internal class SharePointURLTranslationViewModel : INotifyPropertyChanged
     {
@@ -53,12 +53,16 @@ namespace SharePointURLFixer
         {
             if (!string.IsNullOrEmpty(input) )
             {
-                string pattern = @"(:[f|w|x|p|b]:\/)";
+                string pattern = @"(:[f|w|x|p|b]:\/r/)";
                 string substitution = "";
                 RegexOptions options = RegexOptions.Multiline;
 
                 Regex regex = new Regex(pattern, options);
                 string result = regex.Replace(input, substitution);
+
+                //now remove any querystring
+                Uri uri = new Uri(result);
+                result = uri.GetLeftPart(UriPartial.Path);
                 return result;
             }
             else

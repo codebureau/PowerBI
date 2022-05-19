@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>SharePointURLFixerIcon.ico</ApplicationIcon>
+    <ApplicationIcon>SharePointURLCleanerIcon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -16,12 +16,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="SharePointURLFixerIcon.png" />
+    <None Remove="SharePointURLCleanerIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="SharePointURLFixerIcon.ico" />
-    <Content Include="SharePointURLFixerIcon.png" />
+    <Content Include="SharePointURLCleanerIcon.ico" />
+    <Content Include="SharePointURLCleanerIcon.png" />
   </ItemGroup>
 
   <ItemGroup>

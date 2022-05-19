@@ -1,4 +1,4 @@
-﻿namespace SharePointURLFixer
+﻿namespace SharePointURLCleaner
 {
     partial class ExternalTool
     {
@@ -140,7 +140,7 @@
             this.Name = "ExternalTool";
             this.ShowIcon = false;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
-            this.Text = "SharePoint URL Fixer";
+            this.Text = "SharePoint URL Cleaner";
             this.Load += new System.EventHandler(this.ExternalTool_Load);
             ((System.ComponentModel.ISupportInitialize)(this.appIcon)).EndInit();
             this.ResumeLayout(false);

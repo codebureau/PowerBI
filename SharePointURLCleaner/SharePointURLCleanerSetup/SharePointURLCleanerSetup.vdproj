@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:SharePointURLFixerSetup"
+"ProjectName" = "8:SharePointURLCleanerSetup"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_1002E84668CC4929BE6FE34B4F77E191"
+        "MsmKey" = "8:_33517AAE1AD94D4F8F525533761EA9B5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -43,6 +43,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -59,6 +75,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -90,10 +122,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1002E84668CC4929BE6FE34B4F77E191"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_33517AAE1AD94D4F8F525533761EA9B5"
             {
-            "SourcePath" = "8:..\\sharepointurlfixer.pbitool.json"
-            "TargetName" = "8:sharepointurlfixer.pbitool.json"
+            "SourcePath" = "8:..\\sharepointurlcleaner.pbitool.json"
+            "TargetName" = "8:sharepointurlcleaner.pbitool.json"
             "Tag" = "8:"
             "Folder" = "8:_2E53ACD6842645D093143C1EA3483991"
             "Condition" = "8:"
@@ -209,24 +241,24 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:SharePoint URL Fixer"
-        "ProductCode" = "8:{C0FEB03A-8218-42EB-BD4B-99A635D7C8C5}"
-        "PackageCode" = "8:{06044C8D-3423-4E10-A693-66474A6D645C}"
+        "ProductName" = "8:SharePoint URL Cleaner"
+        "ProductCode" = "8:{E5B959CD-B5C1-4734-B4B6-EA9D07865684}"
+        "PackageCode" = "8:{8BF5878C-8925-4674-B4D8-B53C212149AB}"
         "UpgradeCode" = "8:{482FDA0E-A0AF-43DA-83CB-D68B93D411BA}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Codebureau"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
-        "Title" = "8:SharePoint URL Fixer"
+        "Title" = "8:SharePoint URL Cleaner"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Matt Simner"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:SharePoint URL Fixer.  Power BI External Tool to strip unwanted characters from SharePoint URLs - allowing import to Power BI."
+        "ARPCOMMENTS" = "8:SharePoint URL Cleaner.  Power BI External Tool to strip unwanted characters from SharePoint URLs - allowing import to Power BI."
         "ARPURLINFOABOUT" = "8:"
         "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
@@ -732,7 +764,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_92960C2060BE4A99885B1C665CFB2286"
             {
-            "SourcePath" = "8:..\\SharePointURLFixer\\obj\\Release\\netcoreapp3.1\\apphost.exe"
+            "SourcePath" = "8:..\\SharePointURLCleaner\\obj\\Release\\netcoreapp3.1\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_EF5B9B4B033149BEBF780FFEB1E269FE"
